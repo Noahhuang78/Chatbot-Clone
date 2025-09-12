@@ -1,7 +1,8 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from faq_module import query_faq
-app = Flask(__name__)
+
+app = Flask(__name__, static_folder="static")
 CORS(app)
 
 @app.route('/chatResponse', methods = ["POST"])
@@ -19,7 +20,10 @@ def chatResponse():
     
     except(KeyError, TypeError):
          return jsonify({"response": "error"}) 
-    
+
+@app.route("/")
+def serve():
+    return send_from_directory(app.static_folder, "index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
