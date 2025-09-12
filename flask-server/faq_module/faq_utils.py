@@ -54,7 +54,7 @@ def embed_faq(faq_data):
         ids=[str(i) for i in range(len(faq_embeddings))]
     )
 
-def query_faq(user_question = "What does “Shape” and “Pattern” functions of the Machine Vision System DMV Series mean") -> dict:
+def query_faq(user_question = "What does “Shape” and “Pattern” functions of the Machine Vision System DMV Series mean", history = " ") -> dict:
 
     query_vector = embedder.encode(user_question).tolist() #easier and friendlier to embed than numpy array
     results = collection.query(
@@ -86,6 +86,7 @@ def query_faq(user_question = "What does “Shape” and “Pattern” functions
                 "parts": [
                     {"text": f'''
                             Remember that the customer cannot see the RAG retrieved context, so don't make any mention about it at all.
+                            Chat History: {history}
                             Context: {top_faqs}\n\n
                             User Question: {user_question}\n\nAnswer:
                      '''}

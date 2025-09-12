@@ -16,7 +16,7 @@ const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse}) => {
         //Add a "Thinking... " placeholder for bot's response
         setChatHistory((history) => [...history, {role: "model", text: "Thinking..." }]);
         //call function to generate bot response
-        generateBotResponse([...chatHistory, { role: "user", text: `Using the details provided above, please address this query: ${userMessage}`}]);
+        generateBotResponse([...chatHistory, { role: "user", text: `Following the chat history provided above and the RAG retrieved context, please address this query: ${userMessage}`}]);
         }, 600)
 
     }

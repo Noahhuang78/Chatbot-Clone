@@ -15,7 +15,7 @@ def chatResponse():
         i = len(history) - 1
         user_question = history[i]["text"]
         print("User QUESTIOn", user_question)
-        bot_message = query_faq(user_question)
+        bot_message = query_faq(user_question, history)
         return jsonify({"response": bot_message}) 
     
     except(KeyError, TypeError):
