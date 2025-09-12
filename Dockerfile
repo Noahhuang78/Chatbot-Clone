@@ -18,7 +18,7 @@ RUN npm run build
 # --------------------------
 # Stage 2: Setup Flask backend
 # --------------------------
-FROM python:3.11-slim
+FROM python:3.10.10-slim
 
 WORKDIR /app
 
