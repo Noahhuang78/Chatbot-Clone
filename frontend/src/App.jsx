@@ -28,7 +28,7 @@ const App = () => {
     }
     try{
       //make the API call to get the bot's response
-      const response = await fetch("http://127.0.0.1:5000/chatResponse", requestOptions);
+      const response = await fetch("/chatResponse", requestOptions);
       const data = await response.json();
       if(!response.ok) throw new Error(data.error.message || "something went wrong")
       console.log(data)
