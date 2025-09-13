@@ -34,8 +34,8 @@ COPY --from=frontend-build /app/frontend/dist ./static
 # If using Vite, change "dist" to your build folder name
 
 # Expose port (Render uses $PORT)
-ENV PORT=5000
+ENV PORT=8080
 EXPOSE $PORT
 
 # Run Flask
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "test_server:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:${PORT}", "test_server:app"]
