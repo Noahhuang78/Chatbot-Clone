@@ -45,4 +45,5 @@ ENV PORT=8080
 EXPOSE $PORT
 
 # Run Flask
-CMD ["gunicorn", "-b", "0.0.0.0:${PORT}", "test_server:app"]
+CMD ["python", "-m", "gunicorn", "-b", "0.0.0.0:5000", "test_server:app"]
+
