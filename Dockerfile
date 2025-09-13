@@ -18,16 +18,12 @@ RUN npm run build
 # --------------------------
 # Stage 2: Setup Flask backend
 # --------------------------
-FROM python:3.10.10-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
 # Install system dependencies for Chroma + sqlite3
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    sqlite3 \
-    libsqlite3-dev \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev
 
 # Install Python dependencies
 COPY flask-server/requirements.txt ./
@@ -42,8 +38,7 @@ COPY --from=frontend-build /app/frontend/dist ./static
 
 # Expose port (Render uses $PORT)
 ENV PORT=8080
-EXPOSE $PORT
 
-# Run Flask
-CMD ["python", "-m", "gunicorn", "-b", "0.0.0.0:5000", "test_server:app"]
+# Start Gunicorn using the PORT env variable
+CMD ["sh", "-c", "python -m gunicorn -b 0.0.0.0:${PORT} test_server:app"]
 
