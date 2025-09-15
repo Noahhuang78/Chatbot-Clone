@@ -36,7 +36,7 @@ COPY flask-server/ ./
 COPY --from=frontend-build /app/frontend/dist ./static
 # If using Vite, change "dist" to your build folder name
 
-# Expose port (Render uses $PORT)
+#default PORT env variable
 ENV PORT=8080
 
 # Start Gunicorn using the PORT env variable
