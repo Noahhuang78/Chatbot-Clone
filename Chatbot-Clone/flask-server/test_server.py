@@ -1,0 +1,25 @@
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+from faq_module import query_faq
+app = Flask(__name__)
+CORS(app)
+
+@app.route('/chatResponse', methods = ["POST"])
+def chatResponse():
+    data = request.get_json()
+    print("Received data:", data)   
+    history = data.get("contents", [])
+    print("Parsed history:", history)
+    try:
+        i = len(history) - 1
+        user_question = history[i]["text"]
+        print("User QUESTIOn", user_question)
+        bot_message = query_faq(user_question)
+        return jsonify({"response": bot_message}) 
+    
+    except(KeyError, TypeError):
+         return jsonify({"response": "error"}) 
+    
+
+if __name__ == "__main__":
+    app.run(debug=True)
