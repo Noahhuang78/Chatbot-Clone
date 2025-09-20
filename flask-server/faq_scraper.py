@@ -26,7 +26,6 @@ soup = BeautifulSoup(driver.page_source, "html.parser") # load html string as so
 # Step 2: Find all FAQ links
 faq_list = soup.find("ul", class_="faq-list list-wrapper")  #searches the soup tree for the corresponding element and class
 
-faq_links = []
 FAQ_data = []
 print(faq_list)
 
@@ -54,7 +53,7 @@ for i in range(1,100):  #58 FAQ pages
         
             a = li.find("a", href=True)          #find anchor tag elements with href in each li.
             question = a.get_text(strip=True) if a else "No Question"
-            if a:                                #if found, append the a to faq_links with the included anchor tag url
+            if a:                                #if found, get the question and answer text and append to FAQ_data as "question" and "answer" key-value pairs dictionary. 
                 link = BASE_URL + a['href']
                 raw = requests.get(link)
                 faq_soup = BeautifulSoup(raw.text, 'html.parser')
