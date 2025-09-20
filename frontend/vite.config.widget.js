@@ -1,8 +1,9 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vite";        //CMD: npx vite build --config frontend/vite.config.widget.js
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  
   build: {
     lib: {
       entry: "src/main.jsx",          // ✅ correct entry

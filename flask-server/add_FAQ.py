@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from concurrent.futures import ThreadPoolExecutor
+import shutil
 
 
 BASE_URL = "https://www.deltaww.com"
@@ -30,9 +31,27 @@ faq_links = []
 FAQ_data = []
 print(faq_list)
 
+def new_FAQ_adder(question, answer):
+    new_faqs = []
+    with open("delta_faq.jsonl", "r", encoding="utf-8") as f:
+        for line in f:
+            faq_dict = json.loads(line)
+            if faq_dict["question"] != question: 
+                new_faqs.append({"question": question, "answer": answer})
+                continue
+            else: 
+                with open("new_faqs.jsonl", "a", encoding = "utf-8") as f:
+                    for faq in new_faqs:
+                        json.dumps(faq, f, ensure_ascii=False)
+                break
+            
+    with open("delta_faq.jsonl", "wb") as out:
+        for name in ("new_faqs.jsonl", "delta_faq.jsonl"):  # file2 first
+            with open(name, "rb") as f:
+                shutil.copyfileobj(f, out)
 
 
-for i in range(1,100):  #58 FAQ pages
+for i in range(1,100):  #search through up to 99 FAQ pages
     try:
         link = driver.find_element(By.XPATH, f'//ul[@id="pager"]//a[text()="{i}"]')
         link = WebDriverWait(driver, 3).until(             #wait until element is loaded to be clicked
@@ -69,7 +88,7 @@ for i in range(1,100):  #58 FAQ pages
         break
 
 
-with open("delta_faq.jsonl", "w", encoding= "utf-8") as f:
+with open("delta_faq.jsonl", "a", encoding= "utf-8") as f:
     for data in FAQ_data:
         json.dump(data, f, ensure_ascii=False)
         f.write("\n")
