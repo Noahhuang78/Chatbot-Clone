@@ -28,4 +28,4 @@ def serve():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))  # fallback to 8080 locally
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, threaded=True)

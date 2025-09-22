@@ -42,11 +42,7 @@ def new_FAQ(question, answer):                                  #OBSERVATION: We
         question = question.strip()
 
         for line in old_lines:                                                        
-            faq_dict = json.loads(line)
-            # print(" + question)
-            # print( answer)
-            # print(faq_dict["question"] )
-            # print( faq_dict["answer"] )
+            faq_dict = json.loads(line)    
             print("QUESTION:" + "\n" + repr(question))            #repr() returns raw string representation with white spaces and unicode characters.
             print("OLD QUESTION:"  + "\n" + repr(faq_dict["question"]))
             print("IS OLD QUESTION?" + "\n" +  str(question == faq_dict["question"]))
@@ -108,7 +104,7 @@ for i in range(1,100):  #search through up to 99 FAQ pages if Delta ever reaches
         break
 
 if have_newFAQ == True:
-    with open("delta.jsonl", "w", encoding="utf-8") as f:
+    with open("delta_faq.jsonl", "w", encoding="utf-8") as f:
         for faq in NEW_FAQS:                        #we rewrite our delta_faq.jsonl adding the new faqs.
             json.dump(faq, f, ensure_ascii=False)
             f.write("\n")
