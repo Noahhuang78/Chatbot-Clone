@@ -14,13 +14,13 @@ embedder = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 client = chromadb.Client(chromadb.config.Settings(persist_directory="./db"))  #db inside venv folder > chroma > db
 collection = client.create_collection("delta_faq")
 
+faq_data = []
 
 def process_line(line):
     return json.loads(line)
 
 def load_faq() -> list:
     
-    faq_data = []
     with open("delta_faq.jsonl", "r", encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -28,14 +28,14 @@ def load_faq() -> list:
         results = list(executor.map(process_line, lines))  #executor.map returns a lazy iterator, need list() to return a full executed list.
 
     faq_data.extend(results)
-    print(faq_data[:2])
-    return faq_data
+    print("First 3 FAQ DATA:" + "\n" + str(faq_data[:2]))
+
 
 # -----------------   Embedding into vector database -------------------#
 
 
 
-def embed_faq(faq_data):
+def embed_faq():
     
     faq_embeddings = []
     for item in faq_data:
@@ -105,8 +105,8 @@ def query_faq(user_question = "What does “Shape” and “Pattern” functions
     print("BOT MESSAGE:", bot_message)
     return(bot_message)
 
-faq_data = load_faq()
-embed_faq(faq_data)
+load_faq()
+embed_faq()
 
 
 
