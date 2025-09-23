@@ -23,7 +23,7 @@ def chatResponse():
     except(KeyError, TypeError):
          return jsonify({"response": "error"}) 
 
-@app.route("/updateFAQs")          #scrape for new faqs, load and embed updated delta_faq.jsonl file
+@app.route("/update")          #scrape for new faqs, load and embed updated delta_faq.jsonl file
 def update():
     scrap_new()
     load_faq()
