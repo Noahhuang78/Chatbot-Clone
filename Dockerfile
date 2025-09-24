@@ -23,7 +23,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Install system dependencies for Chroma + sqlite3
-RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev
+RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev chromium chromium-driver
 
 # Install Python dependencies
 COPY flask-server/requirements.txt ./
