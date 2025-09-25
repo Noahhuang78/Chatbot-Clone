@@ -28,7 +28,7 @@ def load_faq() -> list:
         results = list(executor.map(process_line, lines))  #executor.map returns a lazy iterator, need list() to return a full executed list.
 
     faq_data.extend(results)
-    print("First 3 FAQ DATA:" + "\n" + str(faq_data[:2]))
+    # print("First 3 FAQ DATA:" + "\n" + str(faq_data[:2]))
 
 
 # -----------------   Embedding into vector database -------------------#

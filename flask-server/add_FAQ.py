@@ -14,7 +14,7 @@ BASE_URL = "https://www.deltaww.com"
 url = f"{BASE_URL}/en-US/FAQ/"
 
 
-NEW_FAQS = []            #to store newly scraped FAQs
+new_faqs = []            #to store newly scraped FAQs
 old_faqs = []           #load old FAQs from delta_faq.jsonl
 
 stop_scraping = False     #flags for exiting scraping and checking if need to write to jsonl file
@@ -66,11 +66,13 @@ def scrap_new():
     faq_list = soup.find("ul", class_="faq-list list-wrapper")  #searches the soup tree for the corresponding element and class
 
     print(faq_list)
+    global new_faqs
     global stop_scraping
     global have_newFAQ
     load_old()
     for i in range(1,100):  #search through up to 99 FAQ pages if Delta ever reaches that amount XD
         if stop_scraping:
+            stop_scraping = False
             break
         try:
             link = driver.find_element(By.XPATH, f'//ul[@id="pager"]//a[text()="{i}"]')
@@ -104,9 +106,9 @@ def scrap_new():
                     if new_faq == False:               #if no more new faq, --THE-END-- 
                         stop_scraping = True
                         break
-                    else:                               #else append to NEW_FAQS and continue searching for new FAQs
-                        NEW_FAQS.append(new_faq)
-                        print(NEW_FAQS)
+                    else:                               #else append to new_faqs and continue searching for new FAQs
+                        new_faqs.append(new_faq)
+                        print(new_faqs)
                         have_newFAQ = True
                         continue
 
@@ -116,8 +118,9 @@ def scrap_new():
             break
 
     if have_newFAQ == True:
+        have_newFAQ == False
         with open("delta_faq.jsonl", "w", encoding="utf-8") as f:
-            for faq in NEW_FAQS:                        #we rewrite our delta_faq.jsonl adding the new faqs.
+            for faq in new_faqs:                        #we rewrite our delta_faq.jsonl adding the new faqs.
                 json.dump(faq, f, ensure_ascii=False)
                 f.write("\n")
             for line in old_faqs:
@@ -126,7 +129,8 @@ def scrap_new():
                 f.write("\n")
 
         with open("new_faq.jsonl", "a", encoding = "utf-8") as nf:    #we append new faqs into new_faqs.jsonl just for logging purposes.
-            for faq in NEW_FAQS:
+            for faq in new_faqs:
                 json.dump(faq, nf, ensure_ascii=False)
                 nf.write("\n")
-
+    new_faqs = []
+    driver.quit()

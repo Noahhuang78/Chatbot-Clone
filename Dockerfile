@@ -38,6 +38,7 @@ COPY --from=frontend-build /app/frontend/dist ./static
 
 #default PORT env variable
 ENV PORT=8080
+ENV REDIS_URL=redis://redis:6379/0
 
 # Start Gunicorn using the PORT env variable
 CMD ["sh", "-c", "python -m gunicorn -b 0.0.0.0:${PORT} test_server:app"]

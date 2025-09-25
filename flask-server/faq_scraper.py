@@ -66,7 +66,8 @@ for i in range(1,100):  #58 FAQ pages
     except Exception as e:
         print(f"Could not click page {i}:{e}")
         break
-
+    
+driver.quit()
 
 with open("delta_faq.jsonl", "w", encoding= "utf-8") as f:
     for data in FAQ_data:
