@@ -33,7 +33,6 @@ print(faq_list)
 
 for i in range(1,100):  #58 FAQ pages
     try:
-        link = driver.find_element(By.XPATH, f'//ul[@id="pager"]//a[text()="{i}"]')
         link = WebDriverWait(driver, 3).until(             #wait until element is loaded to be clicked
     EC.element_to_be_clickable((By.XPATH, f'//ul[@id="pager"]//a[text()="{i}"]'))
 )
@@ -58,7 +57,7 @@ for i in range(1,100):  #58 FAQ pages
                 raw = requests.get(link)
                 faq_soup = BeautifulSoup(raw.text, 'html.parser')
                 answer_div = faq_soup.find("div", class_= "this-info")
-                answer = answer_div.get_text(" ",strip=True) if answer_div else "No Answer"
+                answer = answer_div.get_text(separator=" ",strip=True) if answer_div else "No Answer"
                 FAQ_data.append({'question': question, 'answer': answer})
  
         

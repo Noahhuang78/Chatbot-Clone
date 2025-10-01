@@ -9,15 +9,15 @@ const App = () => {
   const [chatHistory, setChatHistory] = useState([{
     hideInChat: true,
     role: "model",
-    text: chatbotPrompt
+    text: chatbotPrompt,
   }])
   const [showChatbot, setShowChatbot] = useState(false)
 
   const chatBodyRef = useRef()
 
   const generateBotResponse = async(history) => {
-    const updateHistory = (text, isError = false) => {  //replaces "Thinking..." with bot's response
-      setChatHistory(prev => [...prev.filter(msg => msg.text !== "Thinking..."), {role: "model", text, isError}])
+    const updateHistory = (text, url, isError = false) => {  //replaces "Thinking..." with bot's response
+      setChatHistory(prev => [...prev.filter(msg => msg.text !== "Thinking..."), {role: "model", text, url, isError}])
     }
     //Format chat history for API request
     // history = history.map(({role, text}) => ({role, parts: [{text}]}))
@@ -34,7 +34,7 @@ const App = () => {
       console.log(data)
       //clean and update chat history with bot's response
       const apiResponseText = data.response.replace(/\*\*(.*?)\*\*/g, "$1").trim()
-      updateHistory(apiResponseText)
+      updateHistory(apiResponseText, data.url)
     }catch(error){
       updateHistory(error.message, true)
     }

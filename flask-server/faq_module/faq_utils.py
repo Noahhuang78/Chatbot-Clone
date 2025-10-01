@@ -71,6 +71,7 @@ def query_faq(user_question = "What does “Shape” and “Pattern” functions
         print(f"Match{i+1}:")
         print("Q", faq["question"])
         print("A", faq["answer"])
+        print('URL', faq["url"])
         print("Similarity Distance:", faq['similarity_distance'] )
         
         print("------")
@@ -86,6 +87,7 @@ def query_faq(user_question = "What does “Shape” and “Pattern” functions
                 "parts": [
                     {"text": f'''
                             Remember that the customer cannot see the RAG retrieved context, so don't make any mention about it at all.
+                            Also Return the best url link from the context if it helps the customer.
                             Chat History: {history}
                             Context: {top_faqs}\n\n
                             User Question: {user_question}\n\nAnswer:
