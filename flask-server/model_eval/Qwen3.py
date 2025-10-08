@@ -74,7 +74,6 @@ def load_questions():
 
 load_faq()
 embed_faq()
-results = {}
 questions = load_questions()
 
 
