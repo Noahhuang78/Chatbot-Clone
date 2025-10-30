@@ -1,0 +1,857 @@
+[
+  {
+    "query": "What is the default IP address for the InsightPower Mini SNMP Card?",
+    "retrieved_pdfs": [
+      "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+      "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509"
+    ],
+    "ground_truth_pdfs": [
+      "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          160,
+          167
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          47,
+          48
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          158,
+          159
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          40,
+          50
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          12,
+          27
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          56,
+          64
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          56,
+          64
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          8,
+          11
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          40,
+          50
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          12,
+          27
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I clean the cooling fan in the PMA-SynRM?",
+    "retrieved_pdfs": [
+      "DELTA_IA-MDS_MSI_UM_EN_20250207",
+      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR"
+    ],
+    "ground_truth_pdfs": [
+      "DELTA_IA-MDS_MSI_UM_EN_20250207"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          84,
+          84
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          85,
+          85
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          55,
+          55
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          84,
+          84
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          48,
+          48
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          49,
+          49
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          85,
+          85
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          51,
+          51
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          56,
+          56
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          50,
+          50
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What is the rated power of the RenE-InD 17400-48 system?",
+    "retrieved_pdfs": [
+      "DELTA_IA-MDS_MSI_UM_EN_20250207",
+      "RenE-InD 17400-48(Web)",
+      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+      "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR"
+    ],
+    "ground_truth_pdfs": [
+      "RenE-InD 17400-48(Web)"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          61,
+          62
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          58,
+          59
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          15,
+          15
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          61,
+          62
+        ]
+      },
+      {
+        "pdf_name": "RenE-InD 17400-48(Web)",
+        "pages": [
+          2,
+          2
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          1,
+          1
+        ]
+      },
+      {
+        "pdf_name": "RenE-InD 17400-48(Web)",
+        "pages": [
+          1,
+          1
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          48,
+          48
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          45,
+          45
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          14,
+          14
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I configure the Mini SNMP Card via EzSetting?",
+    "retrieved_pdfs": [
+      "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+      "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR"
+    ],
+    "ground_truth_pdfs": [
+      "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          2,
+          4
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          2,
+          4
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          2,
+          6
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          12,
+          27
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          12,
+          27
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          12,
+          27
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          8,
+          11
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          56,
+          64
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          56,
+          64
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          7,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What are the safety precautions for MSI motor installation?",
+    "retrieved_pdfs": [
+      "DELTA_IA-MDS_MSI_UM_EN_20250207"
+    ],
+    "ground_truth_pdfs": [
+      "DELTA_IA-MDS_MSI_UM_EN_20250207"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          51,
+          51
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          54,
+          55
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          4,
+          5
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          56,
+          56
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          48,
+          48
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          51,
+          51
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          57,
+          57
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          38,
+          38
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          37,
+          37
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          46,
+          47
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What is the storage temperature range for the TEB4810 battery pack?",
+    "retrieved_pdfs": [
+      "DELTA_IA-MDS_MSI_UM_EN_20250207",
+      "Fact-sheet_TPS-Battery_48V100Ah-LFP-TEB4810_V1.0",
+      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+      "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR"
+    ],
+    "ground_truth_pdfs": [
+      "Fact-sheet_TPS-Battery_48V100Ah-LFP-TEB4810_V1.0"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "Fact-sheet_TPS-Battery_48V100Ah-LFP-TEB4810_V1.0",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          38,
+          38
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          80,
+          81
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "Fact-sheet_TPS-Battery_48V100Ah-LFP-TEB4810_V1.0",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "pdf_name": "Fact-sheet_TPS-Battery_48V100Ah-LFP-TEB4810_V1.0",
+        "pages": [
+          1,
+          1
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          5,
+          8
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          37,
+          37
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          38,
+          38
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          5,
+          8
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          48,
+          48
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What are the installation warnings for PQC Active Power Filter?",
+    "retrieved_pdfs": [
+      "DELTA_IA-MDS_MSI_UM_EN_20250207",
+      "RenE-InD 17400-48(Web)",
+      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR"
+    ],
+    "ground_truth_pdfs": [
+      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          1,
+          1
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      {
+        "pdf_name": "RenE-InD 17400-48(Web)",
+        "pages": [
+          2,
+          2
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          60,
+          64
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          2,
+          4
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          53,
+          54
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          58,
+          59
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          50,
+          52
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          1,
+          1
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          40,
+          44
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I perform singularity avoidance on the SCARA?",
+    "retrieved_pdfs": [
+      "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+      "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR"
+    ],
+    "ground_truth_pdfs": [
+      "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          51,
+          52
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          177,
+          177
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          16,
+          17
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          148,
+          151
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          145,
+          147
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          57,
+          63
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          176,
+          176
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          20,
+          21
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          177,
+          177
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          169,
+          170
+        ]
+      }
+    ]
+  },
+  {
+    "query": "What is the working temperature range for PQC SVG module?",
+    "retrieved_pdfs": [
+      "DELTA_IA-MDS_MSI_UM_EN_20250207",
+      "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR"
+    ],
+    "ground_truth_pdfs": [
+      "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          10,
+          12
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          66,
+          67
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207",
+        "pages": [
+          73,
+          78
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          5,
+          8
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          10,
+          12
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          5,
+          8
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          42,
+          47
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          26,
+          27
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          9,
+          9
+        ]
+      },
+      {
+        "pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR",
+        "pages": [
+          28,
+          41
+        ]
+      }
+    ]
+  },
+  {
+    "query": "How do I configure SNMP Trap notifications on the Mini SNMP Card?",
+    "retrieved_pdfs": [
+      "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+      "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509"
+    ],
+    "ground_truth_pdfs": [
+      "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000"
+    ],
+    "hit": true,
+    "top_headers": [
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          27,
+          27
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          22,
+          22
+        ]
+      },
+      {
+        "pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509",
+        "pages": [
+          140,
+          140
+        ]
+      }
+    ],
+    "top_texts": [
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          12,
+          27
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          12,
+          27
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          12,
+          27
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          40,
+          50
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          8,
+          11
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          34,
+          34
+        ]
+      },
+      {
+        "pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000",
+        "pages": [
+          56,
+          64
+        ]
+      }
+    ]
+  }
+]

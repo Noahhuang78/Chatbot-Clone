@@ -1,0 +1,1714 @@
+{
+  "clip_vit_b32": {
+    "config": {
+      "name": "CLIP ViT-B/32",
+      "model_id": "openai/clip-vit-base-patch32",
+      "description": "Fast baseline"
+    },
+    "metrics": {
+      "recall@1": 28.125,
+      "recall@3": 43.75,
+      "recall@5": 55.208333333333336,
+      "recall@10": 67.70833333333333,
+      "mrr@1": 31.25,
+      "mrr@3": 38.541666666666664,
+      "mrr@5": 42.916666666666664,
+      "mrr@10": 44.392361111111114,
+      "ndcg@1": 31.25,
+      "ndcg@3": 38.523735846781896,
+      "ndcg@5": 43.855162573704895,
+      "ndcg@10": 47.708255526515586,
+      "latency_ms": {
+        "mean": 30.37622570991516,
+        "std": 16.09061444098249,
+        "min": 5.234241485595703,
+        "max": 72.12662696838379
+      },
+      "embedding_size": {
+        "dimensions": 512,
+        "dtype": "torch.float32",
+        "memory_per_image_kb": 2.0
+      },
+      "faiss_info": {
+        "index_type": "flat",
+        "num_vectors": 87
+      }
+    },
+    "detailed_results": [
+      {
+        "qid": "q01",
+        "query": "What are the detailed technical specifications for the RenE-InD 17400-48?",
+        "relevant": [
+          "Screenshot_RenE-IND.png"
+        ],
+        "retrieved_top5": [
+          "37.jpg",
+          "35.jpg",
+          "43.jpg",
+          "34.jpg",
+          "15-IA-MDS.jpg"
+        ],
+        "scores_top5": [
+          0.28514036536216736,
+          0.2812463045120239,
+          0.2790614068508148,
+          0.27667298913002014,
+          0.27453213930130005
+        ],
+        "latency_ms": 72.12662696838379,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q02",
+        "query": "How do I configure the Mini SMP?",
+        "relevant": [
+          "Password-Mini-SNMP_1.png",
+          "Password-Mini-SNMP_2.png"
+        ],
+        "retrieved_top5": [
+          "27_IA-MDS.png",
+          "61_Manual_Connectivity-Mini-SNMP.jpg",
+          "Password-Mini-SNMP_1.png",
+          "117_IA-ROBOT_DRASTUDIO.jpg",
+          "118_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "scores_top5": [
+          0.2588268518447876,
+          0.2537044286727905,
+          0.2528519034385681,
+          0.2507781386375427,
+          0.25002479553222656
+        ],
+        "latency_ms": 23.35977554321289,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q03",
+        "query": "What are the specifications of the Delta TEB4810 48V/100Ah Lithium-ion Iron Phosphate battery pack?",
+        "relevant": [
+          "Screenshot TPS.png"
+        ],
+        "retrieved_top5": [
+          "1_TPSBattery.jpg",
+          "13_Manual_InfraSuite.jpg",
+          "0.jpg",
+          "65.jpg",
+          "10.jpg"
+        ],
+        "scores_top5": [
+          0.3344722390174866,
+          0.2930926978588104,
+          0.2906893491744995,
+          0.2890965938568115,
+          0.2844591438770294
+        ],
+        "latency_ms": 31.324148178100586,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q04",
+        "query": "What is the display of the PQC-HMI-F screen?",
+        "relevant": [
+          "43_PQC.jpg",
+          "43.5_PQC.jpg",
+          "44_PQC.jpg"
+        ],
+        "retrieved_top5": [
+          "12.jpg",
+          "37.jpg",
+          "16.jpg",
+          "43_PQC.jpg",
+          "38.jpg"
+        ],
+        "scores_top5": [
+          0.2988337278366089,
+          0.2953774631023407,
+          0.2938636839389801,
+          0.2880188226699829,
+          0.27367356419563293
+        ],
+        "latency_ms": 58.92777442932129,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q05",
+        "query": "What is the PQC display hierarchy?",
+        "relevant": [
+          "44_PQC.jpg"
+        ],
+        "retrieved_top5": [
+          "44_PQC.jpg",
+          "43_PQC.jpg",
+          "Password-Mini-SNMP_2.png",
+          "51.jpg",
+          "12.jpg"
+        ],
+        "scores_top5": [
+          0.2743879556655884,
+          0.2738068997859955,
+          0.272844135761261,
+          0.2696689963340759,
+          0.2680405080318451
+        ],
+        "latency_ms": 23.328304290771484,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q06",
+        "query": "What does the RenE-InD 17400-48 renewable hybrid telecom cabinet look like?",
+        "relevant": [
+          "1_RenE-IND.jpg"
+        ],
+        "retrieved_top5": [
+          "1_RenE-IND.jpg",
+          "33.5_APF.jpg",
+          "27.jpg",
+          "34.jpg",
+          "32.jpg"
+        ],
+        "scores_top5": [
+          0.36934328079223633,
+          0.29934099316596985,
+          0.29934099316596985,
+          0.2870790362358093,
+          0.28670018911361694
+        ],
+        "latency_ms": 41.002511978149414,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q07",
+        "query": "Show me the physical appearance of the Delta TEB4810 battery module.",
+        "relevant": [
+          "1_TPSBattery.jpg"
+        ],
+        "retrieved_top5": [
+          "1_TPSBattery.jpg",
+          "0.jpg",
+          "65.jpg",
+          "63.jpg",
+          "13_Manual_InfraSuite.jpg"
+        ],
+        "scores_top5": [
+          0.32608991861343384,
+          0.30956438183784485,
+          0.29625406861305237,
+          0.2905738949775696,
+          0.28345105051994324
+        ],
+        "latency_ms": 39.14785385131836,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q08",
+        "query": "What are the package contents of InfraSuite Air Distribution Unit?",
+        "relevant": [
+          "13_Manual_InfraSuite.jpg"
+        ],
+        "retrieved_top5": [
+          "27_IA-MDS.png",
+          "117_IA-ROBOT_DRASTUDIO.jpg",
+          "33.5_APF.jpg",
+          "27.jpg",
+          "13_Manual_InfraSuite.jpg"
+        ],
+        "scores_top5": [
+          0.2903536558151245,
+          0.28266826272010803,
+          0.27621495723724365,
+          0.27621495723724365,
+          0.27580970525741577
+        ],
+        "latency_ms": 26.154756546020508,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q09",
+        "query": "What are the components on the front panel of the InfraSuite Air Distribution Unit?",
+        "relevant": [
+          "14_Manual_InfraSuite.jpg"
+        ],
+        "retrieved_top5": [
+          "1_RenE-IND.jpg",
+          "27_IA-MDS.png",
+          "13_Manual_InfraSuite.jpg",
+          "33.5_APF.jpg",
+          "27.jpg"
+        ],
+        "scores_top5": [
+          0.30881184339523315,
+          0.29917478561401367,
+          0.28931042551994324,
+          0.2870394289493561,
+          0.2870394289493561
+        ],
+        "latency_ms": 30.634164810180664,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q10",
+        "query": "What are the Dimensions and Tolerances of Delta PMa-SynRM MSI Series 1500rpm motor?",
+        "relevant": [
+          "15-IA-MDS.jpg"
+        ],
+        "retrieved_top5": [
+          "0.jpg",
+          "43.jpg",
+          "18.jpg",
+          "10.jpg",
+          "13.jpg"
+        ],
+        "scores_top5": [
+          0.32481831312179565,
+          0.3013684153556824,
+          0.2990032732486725,
+          0.2926858067512512,
+          0.29171526432037354
+        ],
+        "latency_ms": 31.833648681640625,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q11",
+        "query": "What is the installation method for the PMa-SynRM MSI Series motor?",
+        "relevant": [
+          "27_IA-MDS.png"
+        ],
+        "retrieved_top5": [
+          "36.jpg",
+          "30.jpg",
+          "18.jpg",
+          "13.jpg",
+          "33.jpg"
+        ],
+        "scores_top5": [
+          0.2966013252735138,
+          0.2965025007724762,
+          0.29207563400268555,
+          0.29198047518730164,
+          0.2849135100841522
+        ],
+        "latency_ms": 28.639554977416992,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q12",
+        "query": "How do I unpack an APF cabinet?",
+        "relevant": [
+          "33_APF.jpg",
+          "33.5_APF.jpg"
+        ],
+        "retrieved_top5": [
+          "33_APF.jpg",
+          "26.jpg",
+          "33.5_APF.jpg",
+          "27.jpg",
+          "34_APF.jpg"
+        ],
+        "scores_top5": [
+          0.3165099620819092,
+          0.3165099620819092,
+          0.2918342351913452,
+          0.2918342351913452,
+          0.2800005376338959
+        ],
+        "latency_ms": 5.234241485595703,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q13",
+        "query": "What is the APF cabinet's wiring?",
+        "relevant": [
+          "34_APF.jpg",
+          "34.5_APF.jpg"
+        ],
+        "retrieved_top5": [
+          "33_APF.jpg",
+          "26.jpg",
+          "30.jpg",
+          "34_APF.jpg",
+          "28.jpg"
+        ],
+        "scores_top5": [
+          0.3343396484851837,
+          0.3343396484851837,
+          0.2928604781627655,
+          0.2820030152797699,
+          0.2820030152797699
+        ],
+        "latency_ms": 26.381969451904297,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q14",
+        "query": "How do I install the Mini SMP?",
+        "relevant": [
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "61_Manual_Connectivity-Mini-SNMP.jpg"
+        ],
+        "retrieved_top5": [
+          "13_Manual_InfraSuite.jpg",
+          "30.jpg",
+          "61_Manual_Connectivity-Mini-SNMP.jpg",
+          "118_IA-ROBOT_DRASTUDIO.jpg",
+          "33.jpg"
+        ],
+        "scores_top5": [
+          0.2601538896560669,
+          0.25696229934692383,
+          0.25693100690841675,
+          0.2513186037540436,
+          0.24943703413009644
+        ],
+        "latency_ms": 15.225887298583984,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q15",
+        "query": "How do I edit a DRAStudio project?",
+        "relevant": [
+          "117_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "retrieved_top5": [
+          "118_IA-ROBOT_DRASTUDIO.jpg",
+          "117_IA-ROBOT_DRASTUDIO.jpg",
+          "44_PQC.jpg",
+          "37.jpg",
+          "12.jpg"
+        ],
+        "scores_top5": [
+          0.2728910446166992,
+          0.2555810809135437,
+          0.2417656034231186,
+          0.23520034551620483,
+          0.23440371453762054
+        ],
+        "latency_ms": 15.886306762695312,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q16",
+        "query": "How do I close a DRAStudio project?",
+        "relevant": [
+          "118_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "retrieved_top5": [
+          "118_IA-ROBOT_DRASTUDIO.jpg",
+          "117_IA-ROBOT_DRASTUDIO.jpg",
+          "44_PQC.jpg",
+          "37.jpg",
+          "31.jpg"
+        ],
+        "scores_top5": [
+          0.2907222807407379,
+          0.2646164894104004,
+          0.24976426362991333,
+          0.2439209371805191,
+          0.24327710270881653
+        ],
+        "latency_ms": 16.81208610534668,
+        "hit@1": true,
+        "hit@5": true
+      }
+    ]
+  },
+  "clip_vit_l14": {
+    "config": {
+      "name": "CLIP ViT-L/14",
+      "model_id": "openai/clip-vit-large-patch14",
+      "description": "More accurate, slower"
+    },
+    "metrics": {
+      "recall@1": 37.5,
+      "recall@3": 62.5,
+      "recall@5": 68.75,
+      "recall@10": 78.125,
+      "mrr@1": 50.0,
+      "mrr@3": 59.375,
+      "mrr@5": 60.62499999999999,
+      "mrr@10": 61.25000000000001,
+      "ndcg@1": 50.0,
+      "ndcg@3": 55.99078265338541,
+      "ndcg@5": 58.40861269860129,
+      "ndcg@10": 61.36886596796038,
+      "latency_ms": {
+        "mean": 64.00707364082336,
+        "std": 74.68624089155558,
+        "min": 31.377077102661133,
+        "max": 349.2753505706787
+      },
+      "embedding_size": {
+        "dimensions": 768,
+        "dtype": "torch.float32",
+        "memory_per_image_kb": 3.0
+      },
+      "faiss_info": {
+        "index_type": "flat",
+        "num_vectors": 87
+      }
+    },
+    "detailed_results": [
+      {
+        "qid": "q01",
+        "query": "What are the detailed technical specifications for the RenE-InD 17400-48?",
+        "relevant": [
+          "Screenshot_RenE-IND.png"
+        ],
+        "retrieved_top5": [
+          "58.jpg",
+          "1_RenE-IND.jpg",
+          "43.jpg",
+          "11.jpg",
+          "15.jpg"
+        ],
+        "scores_top5": [
+          0.2583402991294861,
+          0.2547827363014221,
+          0.25418800115585327,
+          0.2504657506942749,
+          0.25036078691482544
+        ],
+        "latency_ms": 349.2753505706787,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q02",
+        "query": "How do I configure the Mini SMP?",
+        "relevant": [
+          "Password-Mini-SNMP_1.png",
+          "Password-Mini-SNMP_2.png"
+        ],
+        "retrieved_top5": [
+          "Password-Mini-SNMP_1.png",
+          "61_Manual_Connectivity-Mini-SNMP.jpg",
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "27_IA-MDS.png",
+          "53.jpg"
+        ],
+        "scores_top5": [
+          0.2841030955314636,
+          0.26387566328048706,
+          0.2300262749195099,
+          0.22828911244869232,
+          0.22283481061458588
+        ],
+        "latency_ms": 38.16366195678711,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q03",
+        "query": "What are the specifications of the Delta TEB4810 48V/100Ah Lithium-ion Iron Phosphate battery pack?",
+        "relevant": [
+          "Screenshot TPS.png"
+        ],
+        "retrieved_top5": [
+          "1_TPSBattery.jpg",
+          "Screenshot TPS.png",
+          "0.jpg",
+          "30.jpg",
+          "32.jpg"
+        ],
+        "scores_top5": [
+          0.3149212598800659,
+          0.2997939884662628,
+          0.28375306725502014,
+          0.2741301655769348,
+          0.26733487844467163
+        ],
+        "latency_ms": 86.67731285095215,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q04",
+        "query": "What is the display of the PQC-HMI-F screen?",
+        "relevant": [
+          "43_PQC.jpg",
+          "43.5_PQC.jpg",
+          "44_PQC.jpg"
+        ],
+        "retrieved_top5": [
+          "16.jpg",
+          "13.jpg",
+          "12.jpg",
+          "17.jpg",
+          "49.jpg"
+        ],
+        "scores_top5": [
+          0.2783181369304657,
+          0.27482450008392334,
+          0.27289843559265137,
+          0.2721535563468933,
+          0.2713136672973633
+        ],
+        "latency_ms": 51.62191390991211,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q05",
+        "query": "What is the PQC display hierarchy?",
+        "relevant": [
+          "44_PQC.jpg"
+        ],
+        "retrieved_top5": [
+          "3.jpg",
+          "54.jpg",
+          "12.jpg",
+          "51.jpg",
+          "44_PQC.jpg"
+        ],
+        "scores_top5": [
+          0.25490111112594604,
+          0.25315380096435547,
+          0.2496374547481537,
+          0.24937289953231812,
+          0.2474088966846466
+        ],
+        "latency_ms": 36.14020347595215,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q06",
+        "query": "What does the RenE-InD 17400-48 renewable hybrid telecom cabinet look like?",
+        "relevant": [
+          "1_RenE-IND.jpg"
+        ],
+        "retrieved_top5": [
+          "1_RenE-IND.jpg",
+          "33.5_APF.jpg",
+          "27.jpg",
+          "40.jpg",
+          "32.jpg"
+        ],
+        "scores_top5": [
+          0.3084062337875366,
+          0.2859257459640503,
+          0.2859257459640503,
+          0.2657323181629181,
+          0.25789910554885864
+        ],
+        "latency_ms": 47.132015228271484,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q07",
+        "query": "Show me the physical appearance of the Delta TEB4810 battery module.",
+        "relevant": [
+          "1_TPSBattery.jpg"
+        ],
+        "retrieved_top5": [
+          "1_TPSBattery.jpg",
+          "Screenshot TPS.png",
+          "30.jpg",
+          "43.jpg",
+          "32.jpg"
+        ],
+        "scores_top5": [
+          0.2943418025970459,
+          0.2717474699020386,
+          0.26347455382347107,
+          0.2627275586128235,
+          0.2625492513179779
+        ],
+        "latency_ms": 46.70381546020508,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q08",
+        "query": "What are the package contents of InfraSuite Air Distribution Unit?",
+        "relevant": [
+          "13_Manual_InfraSuite.jpg"
+        ],
+        "retrieved_top5": [
+          "13_Manual_InfraSuite.jpg",
+          "24.jpg",
+          "33_APF.jpg",
+          "26.jpg",
+          "25.jpg"
+        ],
+        "scores_top5": [
+          0.32030490040779114,
+          0.2921575903892517,
+          0.2674062252044678,
+          0.2674062252044678,
+          0.2541179955005646
+        ],
+        "latency_ms": 35.31455993652344,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q09",
+        "query": "What are the components on the front panel of the InfraSuite Air Distribution Unit?",
+        "relevant": [
+          "14_Manual_InfraSuite.jpg"
+        ],
+        "retrieved_top5": [
+          "13_Manual_InfraSuite.jpg",
+          "25.jpg",
+          "24.jpg",
+          "33.5_APF.jpg",
+          "27.jpg"
+        ],
+        "scores_top5": [
+          0.3099188506603241,
+          0.27262037992477417,
+          0.2699122428894043,
+          0.26112625002861023,
+          0.26112625002861023
+        ],
+        "latency_ms": 51.11265182495117,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q10",
+        "query": "What are the Dimensions and Tolerances of Delta PMa-SynRM MSI Series 1500rpm motor?",
+        "relevant": [
+          "15-IA-MDS.jpg"
+        ],
+        "retrieved_top5": [
+          "Screenshot TPS.png",
+          "15-IA-MDS.jpg",
+          "58.jpg",
+          "11.jpg",
+          "0.jpg"
+        ],
+        "scores_top5": [
+          0.2837465703487396,
+          0.2691102921962738,
+          0.2617427706718445,
+          0.2546057105064392,
+          0.2516692280769348
+        ],
+        "latency_ms": 51.85270309448242,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q11",
+        "query": "What is the installation method for the PMa-SynRM MSI Series motor?",
+        "relevant": [
+          "27_IA-MDS.png"
+        ],
+        "retrieved_top5": [
+          "15-IA-MDS.jpg",
+          "11.jpg",
+          "53.jpg",
+          "43.jpg",
+          "22.jpg"
+        ],
+        "scores_top5": [
+          0.25859975814819336,
+          0.2511155307292938,
+          0.2456042617559433,
+          0.24527351558208466,
+          0.24412143230438232
+        ],
+        "latency_ms": 41.65291786193848,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q12",
+        "query": "How do I unpack an APF cabinet?",
+        "relevant": [
+          "33_APF.jpg",
+          "33.5_APF.jpg"
+        ],
+        "retrieved_top5": [
+          "33_APF.jpg",
+          "26.jpg",
+          "33.5_APF.jpg",
+          "27.jpg",
+          "34_APF.jpg"
+        ],
+        "scores_top5": [
+          0.3657378554344177,
+          0.3657378554344177,
+          0.35238540172576904,
+          0.35238540172576904,
+          0.33546876907348633
+        ],
+        "latency_ms": 41.94068908691406,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q13",
+        "query": "What is the APF cabinet's wiring?",
+        "relevant": [
+          "34_APF.jpg",
+          "34.5_APF.jpg"
+        ],
+        "retrieved_top5": [
+          "34_APF.jpg",
+          "28.jpg",
+          "33_APF.jpg",
+          "26.jpg",
+          "33.5_APF.jpg"
+        ],
+        "scores_top5": [
+          0.3627857565879822,
+          0.3627857565879822,
+          0.3367924094200134,
+          0.3367924094200134,
+          0.32635900378227234
+        ],
+        "latency_ms": 31.377077102661133,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q14",
+        "query": "How do I install the Mini SMP?",
+        "relevant": [
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "61_Manual_Connectivity-Mini-SNMP.jpg"
+        ],
+        "retrieved_top5": [
+          "61_Manual_Connectivity-Mini-SNMP.jpg",
+          "Password-Mini-SNMP_1.png",
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "53.jpg",
+          "17.jpg"
+        ],
+        "scores_top5": [
+          0.270835816860199,
+          0.2688605785369873,
+          0.24544905126094818,
+          0.21542128920555115,
+          0.20992335677146912
+        ],
+        "latency_ms": 41.651248931884766,
+        "hit@1": true,
+        "hit@5": true
+      },
+      {
+        "qid": "q15",
+        "query": "How do I edit a DRAStudio project?",
+        "relevant": [
+          "117_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "retrieved_top5": [
+          "118_IA-ROBOT_DRASTUDIO.jpg",
+          "117_IA-ROBOT_DRASTUDIO.jpg",
+          "3.jpg",
+          "17.jpg",
+          "62.jpg"
+        ],
+        "scores_top5": [
+          0.24959860742092133,
+          0.22336798906326294,
+          0.18819613754749298,
+          0.1805053949356079,
+          0.177776500582695
+        ],
+        "latency_ms": 37.041664123535156,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q16",
+        "query": "How do I close a DRAStudio project?",
+        "relevant": [
+          "118_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "retrieved_top5": [
+          "118_IA-ROBOT_DRASTUDIO.jpg",
+          "117_IA-ROBOT_DRASTUDIO.jpg",
+          "61.jpg",
+          "60.jpg",
+          "Password-Mini-SNMP_2.png"
+        ],
+        "scores_top5": [
+          0.2604560852050781,
+          0.24122200906276703,
+          0.18161150813102722,
+          0.18161150813102722,
+          0.18102405965328217
+        ],
+        "latency_ms": 36.455392837524414,
+        "hit@1": true,
+        "hit@5": true
+      }
+    ]
+  },
+  "siglip_base": {
+    "config": {
+      "name": "SigLIP base-patch16",
+      "model_id": "google/siglip-base-patch16-224",
+      "description": "Strong cross-lingual performance"
+    },
+    "metrics": {
+      "recall@1": 0.0,
+      "recall@3": 6.25,
+      "recall@5": 12.5,
+      "recall@10": 20.833333333333332,
+      "mrr@1": 0.0,
+      "mrr@3": 2.083333333333333,
+      "mrr@5": 4.895833333333333,
+      "mrr@10": 6.830357142857143,
+      "ndcg@1": 0.0,
+      "ndcg@3": 3.125,
+      "ndcg@5": 6.2579114708867944,
+      "ndcg@10": 9.461870402859343,
+      "latency_ms": {
+        "mean": 57.30944871902466,
+        "std": 72.46660503780473,
+        "min": 30.270814895629883,
+        "max": 336.3773822784424
+      },
+      "embedding_size": {
+        "dimensions": 768,
+        "dtype": "torch.float32",
+        "memory_per_image_kb": 3.0
+      },
+      "faiss_info": {
+        "index_type": "flat",
+        "num_vectors": 87
+      }
+    },
+    "detailed_results": [
+      {
+        "qid": "q01",
+        "query": "What are the detailed technical specifications for the RenE-InD 17400-48?",
+        "relevant": [
+          "Screenshot_RenE-IND.png"
+        ],
+        "retrieved_top5": [
+          "42.jpg",
+          "27_IA-MDS.png",
+          "44_PQC.jpg",
+          "1.jpg",
+          "15-IA-MDS.jpg"
+        ],
+        "scores_top5": [
+          0.008691022172570229,
+          -0.0017463164404034615,
+          -0.013123721815645695,
+          -0.0141670610755682,
+          -0.015915945172309875
+        ],
+        "latency_ms": 336.3773822784424,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q02",
+        "query": "How do I configure the Mini SMP?",
+        "relevant": [
+          "Password-Mini-SNMP_1.png",
+          "Password-Mini-SNMP_2.png"
+        ],
+        "retrieved_top5": [
+          "27_IA-MDS.png",
+          "42.jpg",
+          "25.jpg",
+          "Password-Mini-SNMP_1.png",
+          "61.jpg"
+        ],
+        "scores_top5": [
+          0.002438640221953392,
+          -0.014382071793079376,
+          -0.01486379187554121,
+          -0.017736807465553284,
+          -0.01892276294529438
+        ],
+        "latency_ms": 58.68268013000488,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q03",
+        "query": "What are the specifications of the Delta TEB4810 48V/100Ah Lithium-ion Iron Phosphate battery pack?",
+        "relevant": [
+          "Screenshot TPS.png"
+        ],
+        "retrieved_top5": [
+          "27_IA-MDS.png",
+          "34.5_APF.jpg",
+          "29.jpg",
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "Screenshot_RenE-IND.png"
+        ],
+        "scores_top5": [
+          0.016986077651381493,
+          -0.0015117819420993328,
+          -0.0015117819420993328,
+          -0.005606695078313351,
+          -0.008477861993014812
+        ],
+        "latency_ms": 48.1266975402832,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q04",
+        "query": "What is the display of the PQC-HMI-F screen?",
+        "relevant": [
+          "43_PQC.jpg",
+          "43.5_PQC.jpg",
+          "44_PQC.jpg"
+        ],
+        "retrieved_top5": [
+          "33.jpg",
+          "42.jpg",
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "36.jpg",
+          "27_IA-MDS.png"
+        ],
+        "scores_top5": [
+          0.006702985614538193,
+          -0.006800245493650436,
+          -0.010478843003511429,
+          -0.011070247739553452,
+          -0.011086322367191315
+        ],
+        "latency_ms": 37.53495216369629,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q05",
+        "query": "What is the PQC display hierarchy?",
+        "relevant": [
+          "44_PQC.jpg"
+        ],
+        "retrieved_top5": [
+          "49.jpg",
+          "42.jpg",
+          "9.jpg",
+          "Password-Mini-SNMP_1.png",
+          "46.jpg"
+        ],
+        "scores_top5": [
+          -0.0014373392332345247,
+          -0.005370503291487694,
+          -0.007188217714428902,
+          -0.010640453547239304,
+          -0.01148354820907116
+        ],
+        "latency_ms": 31.368732452392578,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q06",
+        "query": "What does the RenE-InD 17400-48 renewable hybrid telecom cabinet look like?",
+        "relevant": [
+          "1_RenE-IND.jpg"
+        ],
+        "retrieved_top5": [
+          "Password-Mini-SNMP_1.png",
+          "42.jpg",
+          "27_IA-MDS.png",
+          "50.jpg",
+          "65.jpg"
+        ],
+        "scores_top5": [
+          0.008676113560795784,
+          0.005506240297108889,
+          0.0012383945286273956,
+          0.001088100136257708,
+          -0.0036374563351273537
+        ],
+        "latency_ms": 41.4578914642334,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q07",
+        "query": "Show me the physical appearance of the Delta TEB4810 battery module.",
+        "relevant": [
+          "1_TPSBattery.jpg"
+        ],
+        "retrieved_top5": [
+          "27_IA-MDS.png",
+          "43.5_PQC.jpg",
+          "42.jpg",
+          "51.jpg",
+          "1.jpg"
+        ],
+        "scores_top5": [
+          -0.011292407289147377,
+          -0.015702230855822563,
+          -0.01676306501030922,
+          -0.017324818298220634,
+          -0.018838007003068924
+        ],
+        "latency_ms": 41.58449172973633,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q08",
+        "query": "What are the package contents of InfraSuite Air Distribution Unit?",
+        "relevant": [
+          "13_Manual_InfraSuite.jpg"
+        ],
+        "retrieved_top5": [
+          "Password-Mini-SNMP_1.png",
+          "15.jpg",
+          "117_IA-ROBOT_DRASTUDIO.jpg",
+          "19.jpg",
+          "27_IA-MDS.png"
+        ],
+        "scores_top5": [
+          0.00045770779252052307,
+          -0.0183602012693882,
+          -0.01836850866675377,
+          -0.0216217003762722,
+          -0.025867844000458717
+        ],
+        "latency_ms": 36.45968437194824,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q09",
+        "query": "What are the components on the front panel of the InfraSuite Air Distribution Unit?",
+        "relevant": [
+          "14_Manual_InfraSuite.jpg"
+        ],
+        "retrieved_top5": [
+          "27_IA-MDS.png",
+          "7.jpg",
+          "25.jpg",
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "49.jpg"
+        ],
+        "scores_top5": [
+          0.015264486894011497,
+          0.0005690529942512512,
+          -0.010041773319244385,
+          -0.015906253829598427,
+          -0.01967969909310341
+        ],
+        "latency_ms": 36.01193428039551,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q10",
+        "query": "What are the Dimensions and Tolerances of Delta PMa-SynRM MSI Series 1500rpm motor?",
+        "relevant": [
+          "15-IA-MDS.jpg"
+        ],
+        "retrieved_top5": [
+          "43.jpg",
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "Password-Mini-SNMP_1.png",
+          "27_IA-MDS.png",
+          "34.5_APF.jpg"
+        ],
+        "scores_top5": [
+          -0.01457896362990141,
+          -0.02100481651723385,
+          -0.025859538465738297,
+          -0.02742316946387291,
+          -0.03187162056565285
+        ],
+        "latency_ms": 41.385650634765625,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q11",
+        "query": "What is the installation method for the PMa-SynRM MSI Series motor?",
+        "relevant": [
+          "27_IA-MDS.png"
+        ],
+        "retrieved_top5": [
+          "43.jpg",
+          "41.jpg",
+          "27_IA-MDS.png",
+          "Password-Mini-SNMP_1.png",
+          "42.jpg"
+        ],
+        "scores_top5": [
+          -0.0068956175819039345,
+          -0.022880960255861282,
+          -0.02452123910188675,
+          -0.028701644390821457,
+          -0.03120858408510685
+        ],
+        "latency_ms": 49.71146583557129,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q12",
+        "query": "How do I unpack an APF cabinet?",
+        "relevant": [
+          "33_APF.jpg",
+          "33.5_APF.jpg"
+        ],
+        "retrieved_top5": [
+          "42.jpg",
+          "25.jpg",
+          "Password-Mini-SNMP_1.png",
+          "8.jpg",
+          "33.5_APF.jpg"
+        ],
+        "scores_top5": [
+          0.018569601699709892,
+          0.005494716577231884,
+          0.0035484377294778824,
+          0.003224404528737068,
+          0.0011806841939687729
+        ],
+        "latency_ms": 32.54532814025879,
+        "hit@1": false,
+        "hit@5": true
+      },
+      {
+        "qid": "q13",
+        "query": "What is the APF cabinet's wiring?",
+        "relevant": [
+          "34_APF.jpg",
+          "34.5_APF.jpg"
+        ],
+        "retrieved_top5": [
+          "42.jpg",
+          "Password-Mini-SNMP_1.png",
+          "46.jpg",
+          "49.jpg",
+          "25.jpg"
+        ],
+        "scores_top5": [
+          0.0066478438675403595,
+          -0.006355443969368935,
+          -0.0106290802359581,
+          -0.013701670803129673,
+          -0.015074053779244423
+        ],
+        "latency_ms": 32.35363960266113,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q14",
+        "query": "How do I install the Mini SMP?",
+        "relevant": [
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "61_Manual_Connectivity-Mini-SNMP.jpg"
+        ],
+        "retrieved_top5": [
+          "61.jpg",
+          "60.jpg",
+          "42.jpg",
+          "25.jpg",
+          "27_IA-MDS.png"
+        ],
+        "scores_top5": [
+          0.007562199607491493,
+          0.007562199607491493,
+          0.004743063822388649,
+          0.002135935705155134,
+          0.0012437142431735992
+        ],
+        "latency_ms": 30.270814895629883,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q15",
+        "query": "How do I edit a DRAStudio project?",
+        "relevant": [
+          "117_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "retrieved_top5": [
+          "43.jpg",
+          "42.jpg",
+          "Password-Mini-SNMP_1.png",
+          "27_IA-MDS.png",
+          "31.jpg"
+        ],
+        "scores_top5": [
+          -0.012163965031504631,
+          -0.012294785119593143,
+          -0.01391550898551941,
+          -0.015555807389318943,
+          -0.02071746438741684
+        ],
+        "latency_ms": 31.380414962768555,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q16",
+        "query": "How do I close a DRAStudio project?",
+        "relevant": [
+          "118_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "retrieved_top5": [
+          "42.jpg",
+          "27_IA-MDS.png",
+          "61.jpg",
+          "60.jpg",
+          "43.jpg"
+        ],
+        "scores_top5": [
+          -0.006425675004720688,
+          -0.00924677774310112,
+          -0.011212515644729137,
+          -0.011212515644729137,
+          -0.017609335482120514
+        ],
+        "latency_ms": 31.699419021606445,
+        "hit@1": false,
+        "hit@5": false
+      }
+    ]
+  },
+  "siglip_large": {
+    "config": {
+      "name": "SigLIP large",
+      "model_id": "google/siglip-large-patch16-384",
+      "description": "Most accurate; best for technical diagrams"
+    },
+    "metrics": {
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@5": 0.0,
+      "recall@10": 6.25,
+      "mrr@1": 0.0,
+      "mrr@3": 0.0,
+      "mrr@5": 0.0,
+      "mrr@10": 0.6944444444444444,
+      "ndcg@1": 0.0,
+      "ndcg@3": 0.0,
+      "ndcg@5": 0.0,
+      "ndcg@10": 1.8814374728998824,
+      "latency_ms": {
+        "mean": 239.2585575580597,
+        "std": 271.20388612137646,
+        "min": 137.19463348388672,
+        "max": 1287.0287895202637
+      },
+      "embedding_size": {
+        "dimensions": 1024,
+        "dtype": "torch.float32",
+        "memory_per_image_kb": 4.0
+      },
+      "faiss_info": {
+        "index_type": "flat",
+        "num_vectors": 87
+      }
+    },
+    "detailed_results": [
+      {
+        "qid": "q01",
+        "query": "What are the detailed technical specifications for the RenE-InD 17400-48?",
+        "relevant": [
+          "Screenshot_RenE-IND.png"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "65.jpg",
+          "44_PQC.jpg",
+          "Screenshot TPS.png",
+          "54.jpg"
+        ],
+        "scores_top5": [
+          -0.021016471087932587,
+          -0.02479643188416958,
+          -0.03504331782460213,
+          -0.03835485875606537,
+          -0.03893383592367172
+        ],
+        "latency_ms": 1287.0287895202637,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q02",
+        "query": "How do I configure the Mini SMP?",
+        "relevant": [
+          "Password-Mini-SNMP_1.png",
+          "Password-Mini-SNMP_2.png"
+        ],
+        "retrieved_top5": [
+          "34.jpg",
+          "63.jpg",
+          "65.jpg",
+          "61.jpg",
+          "60.jpg"
+        ],
+        "scores_top5": [
+          -0.03783256560564041,
+          -0.04016986861824989,
+          -0.04403121769428253,
+          -0.04970807582139969,
+          -0.04970807582139969
+        ],
+        "latency_ms": 167.83905029296875,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q03",
+        "query": "What are the specifications of the Delta TEB4810 48V/100Ah Lithium-ion Iron Phosphate battery pack?",
+        "relevant": [
+          "Screenshot TPS.png"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "64.jpg",
+          "65.jpg",
+          "34.jpg",
+          "40.jpg"
+        ],
+        "scores_top5": [
+          -0.032630808651447296,
+          -0.036939654499292374,
+          -0.03953327238559723,
+          -0.04443182051181793,
+          -0.051581721752882004
+        ],
+        "latency_ms": 189.69058990478516,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q04",
+        "query": "What is the display of the PQC-HMI-F screen?",
+        "relevant": [
+          "43_PQC.jpg",
+          "43.5_PQC.jpg",
+          "44_PQC.jpg"
+        ],
+        "retrieved_top5": [
+          "34.jpg",
+          "64.jpg",
+          "62.jpg",
+          "63.jpg",
+          "65.jpg"
+        ],
+        "scores_top5": [
+          -0.015174539759755135,
+          -0.02156149595975876,
+          -0.02796756848692894,
+          -0.03362824022769928,
+          -0.03618011623620987
+        ],
+        "latency_ms": 189.35537338256836,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q05",
+        "query": "What is the PQC display hierarchy?",
+        "relevant": [
+          "44_PQC.jpg"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "65.jpg",
+          "64.jpg",
+          "34.jpg",
+          "62.jpg"
+        ],
+        "scores_top5": [
+          -0.0035486507695168257,
+          -0.00648864172399044,
+          -0.013480153866112232,
+          -0.013901653699576855,
+          -0.018779128789901733
+        ],
+        "latency_ms": 167.5853729248047,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q06",
+        "query": "What does the RenE-InD 17400-48 renewable hybrid telecom cabinet look like?",
+        "relevant": [
+          "1_RenE-IND.jpg"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "61.jpg",
+          "60.jpg",
+          "65.jpg",
+          "34.jpg"
+        ],
+        "scores_top5": [
+          -0.03374885022640228,
+          -0.037791840732097626,
+          -0.037791840732097626,
+          -0.03990079462528229,
+          -0.04221431165933609
+        ],
+        "latency_ms": 163.97404670715332,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q07",
+        "query": "Show me the physical appearance of the Delta TEB4810 battery module.",
+        "relevant": [
+          "1_TPSBattery.jpg"
+        ],
+        "retrieved_top5": [
+          "64.jpg",
+          "34.jpg",
+          "63.jpg",
+          "62.jpg",
+          "65.jpg"
+        ],
+        "scores_top5": [
+          -0.026003580540418625,
+          -0.02994173765182495,
+          -0.03365503251552582,
+          -0.035418033599853516,
+          -0.037857331335544586
+        ],
+        "latency_ms": 157.48071670532227,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q08",
+        "query": "What are the package contents of InfraSuite Air Distribution Unit?",
+        "relevant": [
+          "13_Manual_InfraSuite.jpg"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "64.jpg",
+          "34.jpg",
+          "65.jpg",
+          "Screenshot TPS.png"
+        ],
+        "scores_top5": [
+          -0.029917823150753975,
+          -0.030900634825229645,
+          -0.03097449615597725,
+          -0.034982893615961075,
+          -0.035394925624132156
+        ],
+        "latency_ms": 156.1582088470459,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q09",
+        "query": "What are the components on the front panel of the InfraSuite Air Distribution Unit?",
+        "relevant": [
+          "14_Manual_InfraSuite.jpg"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "65.jpg",
+          "64.jpg",
+          "34.jpg",
+          "38.jpg"
+        ],
+        "scores_top5": [
+          -0.01924949139356613,
+          -0.02402309700846672,
+          -0.02576293796300888,
+          -0.029909677803516388,
+          -0.03438583016395569
+        ],
+        "latency_ms": 166.95761680603027,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q10",
+        "query": "What are the Dimensions and Tolerances of Delta PMa-SynRM MSI Series 1500rpm motor?",
+        "relevant": [
+          "15-IA-MDS.jpg"
+        ],
+        "retrieved_top5": [
+          "34.jpg",
+          "63.jpg",
+          "65.jpg",
+          "64.jpg",
+          "61.jpg"
+        ],
+        "scores_top5": [
+          -0.02568168379366398,
+          -0.030762454494833946,
+          -0.03368457406759262,
+          -0.04231875389814377,
+          -0.04240909218788147
+        ],
+        "latency_ms": 195.34754753112793,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q11",
+        "query": "What is the installation method for the PMa-SynRM MSI Series motor?",
+        "relevant": [
+          "27_IA-MDS.png"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "65.jpg",
+          "64.jpg",
+          "61.jpg",
+          "60.jpg"
+        ],
+        "scores_top5": [
+          -0.03248089551925659,
+          -0.036907315254211426,
+          -0.039023034274578094,
+          -0.04233282804489136,
+          -0.04233282804489136
+        ],
+        "latency_ms": 205.83271980285645,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q12",
+        "query": "How do I unpack an APF cabinet?",
+        "relevant": [
+          "33_APF.jpg",
+          "33.5_APF.jpg"
+        ],
+        "retrieved_top5": [
+          "34.jpg",
+          "63.jpg",
+          "64.jpg",
+          "65.jpg",
+          "61.jpg"
+        ],
+        "scores_top5": [
+          -0.01046825759112835,
+          -0.01849115639925003,
+          -0.02326892875134945,
+          -0.023619847372174263,
+          -0.026269253343343735
+        ],
+        "latency_ms": 190.63186645507812,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q13",
+        "query": "What is the APF cabinet's wiring?",
+        "relevant": [
+          "34_APF.jpg",
+          "34.5_APF.jpg"
+        ],
+        "retrieved_top5": [
+          "64.jpg",
+          "63.jpg",
+          "34.jpg",
+          "62.jpg",
+          "65.jpg"
+        ],
+        "scores_top5": [
+          -0.01474745012819767,
+          -0.018002759665250778,
+          -0.01876162365078926,
+          -0.022100595757365227,
+          -0.02234935387969017
+        ],
+        "latency_ms": 158.89358520507812,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q14",
+        "query": "How do I install the Mini SMP?",
+        "relevant": [
+          "60_Manual_Connectivity-Mini-SNMP.jpg",
+          "61_Manual_Connectivity-Mini-SNMP.jpg"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "65.jpg",
+          "64.jpg",
+          "34.jpg",
+          "62.jpg"
+        ],
+        "scores_top5": [
+          -0.02786891907453537,
+          -0.03167661651968956,
+          -0.03228653594851494,
+          -0.0383477620780468,
+          -0.04291572421789169
+        ],
+        "latency_ms": 152.1146297454834,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q15",
+        "query": "How do I edit a DRAStudio project?",
+        "relevant": [
+          "117_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "retrieved_top5": [
+          "34.jpg",
+          "63.jpg",
+          "65.jpg",
+          "64.jpg",
+          "32.jpg"
+        ],
+        "scores_top5": [
+          -0.009398690424859524,
+          -0.01067083328962326,
+          -0.015478283166885376,
+          -0.019621437415480614,
+          -0.023094160482287407
+        ],
+        "latency_ms": 137.19463348388672,
+        "hit@1": false,
+        "hit@5": false
+      },
+      {
+        "qid": "q16",
+        "query": "How do I close a DRAStudio project?",
+        "relevant": [
+          "118_IA-ROBOT_DRASTUDIO.jpg"
+        ],
+        "retrieved_top5": [
+          "63.jpg",
+          "34.jpg",
+          "65.jpg",
+          "64.jpg",
+          "32.jpg"
+        ],
+        "scores_top5": [
+          -0.000757153145968914,
+          -0.0041154539212584496,
+          -0.005744454450905323,
+          -0.009782605804502964,
+          -0.020655646920204163
+        ],
+        "latency_ms": 142.05217361450195,
+        "hit@1": false,
+        "hit@5": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "query": "What is the default IP address for the InsightPower Mini SNMP Card?",
+    "ground_truth": [
+      {"pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000", "page_range": [14, 15]}
+    ]
+  },
+  {
+    "query": "How do I clean the cooling fan in the PMA-SynRM?",
+    "ground_truth": [
+      {"pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207", "page_range": [84, 84]}
+    ]
+  },
+  {
+    "query": "What is the rated power of the RenE-InD 17400-48 system?",
+    "ground_truth": [
+      {"pdf_name": "RenE-InD 17400-48(Web)", "page_range": [2, 2]}
+    ]
+  },
+  {
+    "query": "How do I configure the Mini SNMP Card via EzSetting?",
+    "ground_truth": [
+      {"pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000", "page_range": [11, 12]}
+    ]
+  },
+  {
+    "query": "What are the safety precautions for MSI motor installation?",
+    "ground_truth": [
+      {"pdf_name": "DELTA_IA-MDS_MSI_UM_EN_20250207", "page_range": [4, 4]}
+    ]
+  },
+  {
+    "query": "What is the storage temperature range for the TEB4810 battery pack?",
+    "ground_truth": [
+      {"pdf_name": "Fact-sheet_TPS-Battery_48V100Ah-LFP-TEB4810_V1.0", "page_range": [2, 2]}
+    ]
+  },
+  {
+    "query": "What are the installation warnings for PQC Active Power Filter?",
+    "ground_truth": [
+      {"pdf_name": "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR", "page_range": [5, 5]}
+    ]
+  },
+  {
+    "query": "How do I perform singularity avoidance on the SCARA?",
+    "ground_truth": [
+      {"pdf_name": "DELTA_IA-ROBOT_DRAStudio_UM_EN_20240509", "page_range": [2, 3]}
+    ]
+  },
+  {
+    "query": "What is the working temperature range for PQC SVG module?",
+    "ground_truth": [
+      {"pdf_name": "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR", "page_range": [12, 12]}
+    ]
+  },
+  {
+    "query": "How do I configure SNMP Trap notifications on the Mini SNMP Card?",
+    "ground_truth": [
+      {"pdf_name": "Manual_Connectivity-Mini-SNMP-G3-for UPS_en-us_501328830000", "page_range": [43, 43]}
+    ]
+  }
+]

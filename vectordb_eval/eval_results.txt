@@ -1,0 +1,36 @@
+============================================================
+CHROMADB RETRIEVAL EVALUATION RESULTS
+============================================================
+
+📊 Precision@K:
+  P@ 1: 0.5059
+  P@ 3: 0.2670
+  P@ 5: 0.1841
+  P@10: 0.1136
+
+📊 Recall@K:
+  R@ 1: 0.3648
+  R@ 3: 0.5202
+  R@ 5: 0.5817
+  R@10: 0.6894
+
+📊 NDCG@K:
+  NDCG@ 1: 0.5059
+  NDCG@ 3: 0.5112
+  NDCG@ 5: 0.5346
+  NDCG@10: 0.5728
+
+📊 F1 Score@K:
+  F1@ 1: 0.4039
+  F1@ 3: 0.3305
+  F1@ 5: 0.2624
+  F1@10: 0.1853
+
+📊 Single-Value Metrics:
+  MAP (Mean Average Precision): 0.5033
+  MRR (Mean Reciprocal Rank):   0.5895
+  R-Precision:                  0.4331
+  Mean Retrieval Time:           0.0095
+  Mean Similarity Distance:           0.5223
+
+============================================================
