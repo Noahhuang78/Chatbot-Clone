@@ -1,4 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Press+Start+2P&display=swap";
+
+#chatbot-root * {
+  box-sizing: border-box;
+}
+
 #chatbot-toggler {
   position: fixed;
   bottom: 30px;
@@ -36,6 +41,8 @@
   opacity: 1;
 }
 .chatbot-popup {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
   position: fixed;
   opacity: 0;
   pointer-events: none;

@@ -61,9 +61,11 @@ body {
 }
 
 .chatbot-popup {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
   position: fixed;
-  opacity: 0;  /* chat popup is invisble, but inputs & buttons are interactable if pointer events enabled */
-  pointer-events: none;  /* disables interaction with buttons, inputs, scrolls, etc pointer elements*/
+  opacity: 0; /* chat popup is invisble, but inputs & buttons are interactable if pointer events enabled */
+  pointer-events: none; /* disables interaction with buttons, inputs, scrolls, etc pointer elements*/
   bottom: 90px;
   right: 35px;
   width: 420px;
@@ -72,15 +74,15 @@ body {
   background: #fff;
   border-radius: 15px;
   transform-origin: bottom right;
-  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 0 128px 0 rgba(0, 0, 0, 0.1),
     0 32px 64px -48px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 }
 .container.show-chatbot .chatbot-popup {
-  opacity:  1;        /* chat popup becomes visible */
+  opacity: 1; /* chat popup becomes visible */
   transform: scale(1);
-  pointer-events: auto;  /* enable buttons and inputs in chat popup */
-
+  pointer-events: auto; /* enable buttons and inputs in chat popup */
 }
 
 .chatbot-popup .chat-header {
@@ -145,16 +147,14 @@ body {
   scrollbar-color: #c9c9c9 transparent;
 }
 
-
 .chat-body .message {
   display: flex;
   gap: 11px;
   align-items: center;
 }
 
-.chat-body .message.error .message-text{
+.chat-body .message.error .message-text {
   color: #ff0000;
-
 }
 
 .chat-body .bot-message img {
@@ -250,7 +250,6 @@ body {
   display: block;
 }
 
-
 @media (max-width: 520px) {
   #chatbot-toggler {
     right: 20px;
@@ -265,7 +264,7 @@ body {
     width: 100%;
   }
 
-  .chatbot-popup .chat-header{
+  .chatbot-popup .chat-header {
     padding: 12px 15px;
   }
 
