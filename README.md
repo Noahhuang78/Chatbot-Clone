@@ -2,7 +2,7 @@
 
 This chatbot is an independent personal project created for educational and demonstration purposes only. It is not affiliated with, endorsed by, or officially connected to Delta Electronics in any way.
 
-The chatbot may generate incorrect, incomplete, outdated, or misleading responses. Information provided by the chatbot should not be considered official customer support, travel advice, or contractual information.
+The chatbot may generate incorrect, incomplete, outdated, or misleading responses. Information provided by the chatbot should not be considered official customer support, professional advice, or contractual information.
 
 Users should always verify important details directly through official Delta Electronics channels.
 
