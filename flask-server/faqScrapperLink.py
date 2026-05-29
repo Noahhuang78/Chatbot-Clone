@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 BASE_URL = "https://www.deltaww.com"
-url = f"{BASE_URL}/en-US/FAQ/"
+url = f"{BASE_URL}/en-US/service-support/faq"
 
 driver = webdriver.Chrome()
 driver.get(url)
@@ -21,7 +21,7 @@ faqs_data = []
 
 for options_index in range(100):
     try:
-        dropdown_1 = driver.find_element(By.ID, "DropDownList1")
+        dropdown_1 = driver.find_element(By.CLASS_NAME, "MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-1xk9oh3")
         select_1 = Select(dropdown_1)
         select_1.select_by_visible_text("Industrial Automation")
         dropdown_2 = driver.find_element(By.ID, "DropDownList2")

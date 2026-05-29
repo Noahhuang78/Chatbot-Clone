@@ -87,8 +87,8 @@
   {
     "query": "How do I clean the cooling fan in the PMA-SynRM?",
     "retrieved_pdfs": [
-      "DELTA_IA-MDS_MSI_UM_EN_20250207",
-      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR"
+      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+      "DELTA_IA-MDS_MSI_UM_EN_20250207"
     ],
     "ground_truth_pdfs": [
       "DELTA_IA-MDS_MSI_UM_EN_20250207"
@@ -172,9 +172,9 @@
   {
     "query": "What is the rated power of the RenE-InD 17400-48 system?",
     "retrieved_pdfs": [
-      "DELTA_IA-MDS_MSI_UM_EN_20250207",
       "RenE-InD 17400-48(Web)",
       "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+      "DELTA_IA-MDS_MSI_UM_EN_20250207",
       "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR"
     ],
     "ground_truth_pdfs": [
@@ -429,9 +429,9 @@
   {
     "query": "What is the storage temperature range for the TEB4810 battery pack?",
     "retrieved_pdfs": [
-      "DELTA_IA-MDS_MSI_UM_EN_20250207",
       "Fact-sheet_TPS-Battery_48V100Ah-LFP-TEB4810_V1.0",
       "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+      "DELTA_IA-MDS_MSI_UM_EN_20250207",
       "UM_PQC_SVG_Mixed-Fixed-Type_en-us_QR"
     ],
     "ground_truth_pdfs": [
@@ -516,9 +516,9 @@
   {
     "query": "What are the installation warnings for PQC Active Power Filter?",
     "retrieved_pdfs": [
-      "DELTA_IA-MDS_MSI_UM_EN_20250207",
       "RenE-InD 17400-48(Web)",
-      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR"
+      "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR",
+      "DELTA_IA-MDS_MSI_UM_EN_20250207"
     ],
     "ground_truth_pdfs": [
       "UM_PQC_APF-Mixed-Fixed-Type_en-us_QR"
