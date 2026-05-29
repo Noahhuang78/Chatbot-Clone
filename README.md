@@ -1,5 +1,22 @@
-## Chatbot
-- Chatbot that scrapes data from deltaww FAQ as a pseudo knowledge base and uses Chroma vector DB for RAG.
+## Disclaimer & Terms of Use
+
+This chatbot is an independent personal project created for educational and demonstration purposes only. It is not affiliated with, endorsed by, or officially connected to Delta Electronics in any way.
+
+The chatbot may generate incorrect, incomplete, outdated, or misleading responses. Information provided by the chatbot should not be considered official customer support, travel advice, or contractual information.
+
+Users should always verify important details directly through official Delta Electronics channels.
+
+By using this chatbot, you acknowledge and agree that:
+
+* responses are generated automatically and may contain errors
+* the creator of this project is not liable for any losses, damages, misunderstandings, or inconveniences resulting from use of the chatbot
+* this project is intended solely for non-commercial, portfolio, educational, and experimental purposes
+
+If you require official assistance, please contact Delta Electronics directly through their official website or customer support channels.
+
+
+## About the Chatbot
+- A chatbot that scrapes data from deltaww FAQ as a pseudo knowledge base and uses Chroma vector DB for RAG.
 - RAG pipeline includes retrieval of pdf images based on metadata path. (Feature not implemented here, only in Capstone DeltaCare360)
 - Industrial Capstone Website here: https://deltaelectronicscapstone.netlify.app/
 
@@ -40,18 +57,3 @@ https://www.deltaww.com/en-US/service-support/faq
 - paste this inside your <body> tag of your html page: <script src="https://<your-netlify-url>/injectWidget.js"></script>
 - done! Chatbot widget should be displayed and functioning on your html page!
 
-## Disclaimer & Terms of Use
-
-This chatbot is an independent personal project created for educational and demonstration purposes only. It is not affiliated with, endorsed by, or officially connected to Delta Electronics in any way.
-
-The chatbot may generate incorrect, incomplete, outdated, or misleading responses. Information provided by the chatbot should not be considered official customer support, travel advice, or contractual information.
-
-Users should always verify important details directly through official Delta Electronics channels.
-
-By using this chatbot, you acknowledge and agree that:
-
-* responses are generated automatically and may contain errors
-* the creator of this project is not liable for any losses, damages, misunderstandings, or inconveniences resulting from use of the chatbot
-* this project is intended solely for non-commercial, portfolio, educational, and experimental purposes
-
-If you require official assistance, please contact Delta Electronics directly through their official website or customer support channels.
