@@ -13,7 +13,8 @@ dist-ssr
 *.local
 venv/
 .env
-
+frontend/.env
+flask-server/.env
 rag_pipeline/data
 rag_pipeline/outputs
 multimodal_eval/data
