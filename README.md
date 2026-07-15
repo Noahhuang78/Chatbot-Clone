@@ -26,7 +26,7 @@ Embedding model and vector evaluation comparison
 
 ## Try the Chatbot here:
 
-https://chatbot-clone-259334185265.asia-southeast1.run.app/
+https://chatbot-clone-243863075645.asia-southeast1.run.app/
 
 Some FAQs to ask:
 
