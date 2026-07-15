@@ -20,6 +20,9 @@ If you require official assistance, please contact Delta Electronics directly th
 - RAG pipeline includes retrieval of pdf images based on metadata path. (Feature not implemented here, only in Capstone DeltaCare360)
 - If you are curious to learn more about the actual Industrial Capstone Project (DeltaCare360), You can look at the website here: https://deltaelectronicscapstone.netlify.app/
 
+Our project is featured in SUTD Capstone 2025/2026 Design AI awards!
+https://capstoneshowcase.sutd.edu.sg/awards/
+
 ## Evaluation
 
 Embedding model and vector evaluation comparison
