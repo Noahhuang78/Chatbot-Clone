@@ -35,7 +35,7 @@ const App = () => {
     try {
       //make the API call to get the bot's response
       const response = await fetch(
-        "https://chatbot-clone-259334185265.asia-southeast1.run.app/chatResponse",
+        "https://chatbot-clone-243863075645.asia-southeast1.run.app//chatResponse",
         requestOptions,
       );
       const data = await response.json();
